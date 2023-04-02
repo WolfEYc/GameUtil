@@ -1,0 +1,21 @@
+{
+  "name": "com.wolfeygamedev.util",
+  "version": "1.0.0",
+  "displayName": "Wolfey Gamedev Util",
+  "description": "Wolfey Gamedev's singleplayer starter utilities",
+  "unity": "2022.2",
+  "unityRelease": "12f1",
+  "documentationUrl": "",
+  "changelogUrl": "",
+  "licensesUrl": "",
+  "keywords": [
+    "wolfey",
+    "util",
+    "starter"
+  ],
+  "author": {
+    "name": "Wolfey",
+    "email": "wolfeygamedev@gmail.com",
+    "url": "https://www.github.com/WolfEYC"
+  }
+}

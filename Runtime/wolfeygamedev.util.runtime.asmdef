@@ -1,0 +1,14 @@
+{
+    "name": "wolfeygamedev.util.runtime",
+    "rootNamespace": "WolfeyGamedev",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
