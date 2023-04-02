@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace WolfeyGamedev.Events
+namespace Wolfey.Events
 {
     [CreateAssetMenu(order = 0, menuName = "WolfeyGamedev/ScriptableEvent", fileName = "NewScriptableEvent")]
     public class ScriptableEvent : ScriptableObject

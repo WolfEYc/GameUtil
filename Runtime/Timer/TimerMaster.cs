@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
-using WolfeyGamedev.Systems;
+using Wolfey.Systems;
 
 
-namespace WolfeyGamedev.Timer
+namespace Wolfey.Timer
 {
     public class TimerMaster : PersistentSingleton<TimerMaster>
     {

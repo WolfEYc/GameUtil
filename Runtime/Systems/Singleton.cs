@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace WolfeyGamedev.Systems
+namespace Wolfey.Systems
 {
     public abstract class StaticInstance<T> : MonoBehaviour where T : MonoBehaviour
     {

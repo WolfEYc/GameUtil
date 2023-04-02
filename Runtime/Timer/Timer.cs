@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace WolfeyGamedev.Timer
+namespace Wolfey.Timer
 {
     public class Timer : MonoBehaviour
     {

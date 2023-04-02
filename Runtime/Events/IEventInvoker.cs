@@ -1,4 +1,4 @@
-namespace WolfeyGamedev.Events
+namespace Wolfey.Events
 {
     public interface IEventInvoker
     {

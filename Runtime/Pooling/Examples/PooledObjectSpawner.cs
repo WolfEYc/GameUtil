@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-using WolfeyGamedev.Util;
+using Wolfey.Extensions;
 
 namespace WolfeyGamedev.Pooling
 {

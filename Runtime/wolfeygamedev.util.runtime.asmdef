@@ -1,6 +1,6 @@
 {
-    "name": "wolfeygamedev.util.runtime",
-    "rootNamespace": "WolfeyGamedev",
+    "name": "wolfey.util.runtime",
+    "rootNamespace": "Wolfey",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

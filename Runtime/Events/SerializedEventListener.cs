@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace WolfeyGamedev.Events
+namespace Wolfey.Events
 {
     public class SerializedEventListener : MonoBehaviour
     {

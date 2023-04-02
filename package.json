@@ -1,8 +1,8 @@
 {
-  "name": "com.wolfeygamedev.util",
+  "name": "com.wolfey.wolfeyutil",
   "version": "1.0.0",
-  "displayName": "Wolfey Gamedev Util",
-  "description": "Wolfey Gamedev's singleplayer starter utilities",
+  "displayName": "WolfeyUtil",
+  "description": "Wolfey's singleplayer starter utilities",
   "unity": "2022.2",
   "unityRelease": "12f1",
   "documentationUrl": "",

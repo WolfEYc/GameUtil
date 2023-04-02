@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace WolfeyGamedev.Events
+namespace Wolfey.Events
 {
     public class SerializedEventInvoker : MonoBehaviour, IEventInvoker
     {
