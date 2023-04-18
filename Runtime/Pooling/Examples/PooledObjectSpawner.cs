@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using Wolfey.Extensions;
 
-namespace WolfeyGamedev.Pooling
+namespace Wolfey.Pooling
 {
     public class PooledObjectSpawner : MonoBehaviour
     {

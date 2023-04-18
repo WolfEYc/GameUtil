@@ -1,6 +1,6 @@
 {
   "name": "com.wolfey.util",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "WolfeyUtil",
   "description": "Wolfey's singleplayer starter utilities",
   "unity": "2022.2",
@@ -17,5 +17,8 @@
     "name": "Wolfey",
     "email": "wolfeygamedev@gmail.com",
     "url": "https://www.github.com/WolfEYC"
+  },
+  "dependencies": {
+    "com.unity.inputsystem": "1.5.1"
   }
 }

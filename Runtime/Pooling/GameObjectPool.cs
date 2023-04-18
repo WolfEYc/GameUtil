@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Pool;
 
-namespace WolfeyGamedev.Pooling
+namespace Wolfey.Pooling
 {
     [CreateAssetMenu(order = 2, menuName = "WolfeyGamedev/GameObjectPool", fileName = "NewGameObjectPool")]
     public class GameObjectPool : ScriptableObject
@@ -29,6 +29,7 @@ namespace WolfeyGamedev.Pooling
         void LazyInstantiateParentGameObject()
         {
             _poolParent = new GameObject($"Pool: {prefab.name}").transform;
+            Application.quitting += _objectPool.Clear;
         }
 
         PooledObject CreateClone()
@@ -52,6 +53,21 @@ namespace WolfeyGamedev.Pooling
         void OnGet(PooledObject obj)
         {
             obj.GameObject.SetActive(true);
+        }
+
+        void OnEnable()
+        {
+            Application.quitting += ApplicationOnQuitting;
+        }
+
+        void OnDisable()
+        {
+            Application.quitting += ApplicationOnQuitting;
+        }
+
+        void ApplicationOnQuitting()
+        {
+            _objectPool?.Clear();
         }
     }
 }

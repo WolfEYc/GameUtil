@@ -29,6 +29,11 @@ namespace Wolfey.Extensions
         {
             mat.SetColor(EmissionColorID, color);
         }
+
+        public static Color GetEmissionColor(this Material mat)
+        {
+            return mat.GetColor(EmissionColorID);
+        }
         
         public static Color Complementary(this Color color)
         {
@@ -202,8 +207,20 @@ namespace Wolfey.Extensions
             camera.fieldOfView = currentFOV;
             return camera.ViewportToWorldPoint(viewPointAtDesired);
         }
-        #endregion
+        public static void PlaceInCircle(this Transform transform, float radius, int index, int count)
+        {
+            float radians = (float)index / count * TwoPI;
+            transform.position = new Vector3(radius * Mathf.Cos(radians), radius * Mathf.Sin(radians), 0f);
+            transform.up = Quaternion.LookRotation(transform.position) * Vector3.forward;
+        }
         
+        public static void PlaceInSemiCircle(this Transform transform, float radius, int index, int count)
+        {
+            float radians = index / 2f / count * TwoPI;
+            transform.position = new Vector3(radius * Mathf.Cos(radians), radius * Mathf.Sin(radians), 0f);
+            transform.up = Quaternion.LookRotation(transform.position) * Vector3.forward;
+        }
+        #endregion
         #region Math
         public const float TwoPI = 2f * Mathf.PI;
         const float TwoThirdsPi = TwoPI / 3f;

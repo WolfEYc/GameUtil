@@ -1,9 +1,8 @@
 {
-    "name": "wolfey.util.runtime",
-    "rootNamespace": "Wolfey",
+    "name": "WolfeyUtil.Editor",
+    "rootNamespace": "",
     "references": [
-        "GUID:75469ad4d38634e559750d17036d5f7c",
-        "GUID:96d9f6a13a9afcc41bfbbf562732fabe"
+        "GUID:dca9472dd9bc43844a38abbb41b8dabb"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

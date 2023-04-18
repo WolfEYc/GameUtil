@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace WolfeyGamedev.Pooling
+namespace Wolfey.Pooling
 {
     public class PooledObject : MonoBehaviour
     {
