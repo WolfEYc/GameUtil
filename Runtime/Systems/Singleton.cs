@@ -5,10 +5,8 @@ namespace Wolfey.Systems
     public abstract class StaticInstance<T> : MonoBehaviour where T : MonoBehaviour
     {
         protected static T _instance;
-        public static T Instance
-        {
-            get { return _instance ??= new GameObject(typeof(T).Name).AddComponent<T>(); }
-        }
+        
+        public static T Instance => _instance;
 
         protected virtual void Awake()
         {
