@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 namespace Wolfey.Events
 {
-    public class InputEventInvoker : SerializedEventInvoker
+    public class InputEventInvoker : EventInvoker
     {
         [SerializeField] InputAction action;
         

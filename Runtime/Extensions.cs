@@ -143,6 +143,11 @@ namespace Wolfey.Extensions
         {
             return Quaternion.AngleAxis(angle, Vector3.forward);
         }
+
+        public static Vector3 EulerFromAngle2D(this float angle)
+        {
+            return Vector3.forward * angle;
+        }
         
         public static Quaternion RotationFromDirection2D(this Vector2 direction)
         {
@@ -221,6 +226,7 @@ namespace Wolfey.Extensions
             transform.up = Quaternion.LookRotation(transform.position) * Vector3.forward;
         }
         #endregion
+        
         #region Math
         public const float TwoPI = 2f * Mathf.PI;
         const float TwoThirdsPi = TwoPI / 3f;

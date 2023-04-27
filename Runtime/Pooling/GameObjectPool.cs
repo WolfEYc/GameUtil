@@ -21,7 +21,7 @@ namespace Wolfey.Pooling
         {
             _objectPool.Release(go);
         }
-        
+
         public int CountInactive => _objectPool.CountInactive;
         public int CountActive => _objectPool.CountActive;
         public int CountAll => _objectPool.CountAll;
@@ -55,18 +55,9 @@ namespace Wolfey.Pooling
             obj.GameObject.SetActive(true);
         }
 
-        void OnEnable()
-        {
-            Application.quitting += ApplicationOnQuitting;
-        }
-
-        void OnDisable()
-        {
-            Application.quitting += ApplicationOnQuitting;
-        }
-
         void ApplicationOnQuitting()
         {
+            Application.quitting -= ApplicationOnQuitting;
             _objectPool?.Clear();
         }
     }
