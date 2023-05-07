@@ -1,19 +1,20 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Wolfey.Events
 {
     public class EventInvoker : MonoBehaviour, IEventInvoker
     {
-        [SerializeField] Event eventObj;
+        [FormerlySerializedAs("eventObj")] [SerializeField] EventObject eventObjectObj;
         
         public void Invoke()
         {
-            eventObj.Invoke();
+            eventObjectObj.Invoke();
         }
 
         public void InvokePayload(object data)
         {
-            eventObj.Invoke(data);
+            eventObjectObj.Invoke(data);
         }
     }
 }
