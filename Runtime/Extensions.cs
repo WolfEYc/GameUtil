@@ -105,6 +105,11 @@ namespace Wolfey.Extensions
                 Object.Destroy(child.gameObject);
             }
         }
+
+        public static void ResetPosAndRot(this Transform t)
+        {
+            t.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
+        }
         
         public static void DestroyChildren(this GameObject g)
         {
