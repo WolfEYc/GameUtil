@@ -16,8 +16,7 @@ namespace Wolfey.Audio
 
         public void Play()
         {
-            _source.clip = clips.RandomElement();
-            _source.Play();
+            _source.PlayOneShot(clips.RandomElement());
         }
     }
 }
