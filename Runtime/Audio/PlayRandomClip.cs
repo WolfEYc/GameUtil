@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using Wolfey.Extensions;
 
@@ -7,11 +8,20 @@ namespace Wolfey.Audio
     public class PlayRandomClip : MonoBehaviour
     {
         [SerializeField] AudioClip[] clips;
+        [SerializeField] bool playOnAwake;
         AudioSource _source;
 
         void Awake()
         {
             _source = GetComponent<AudioSource>();
+        }
+
+        void OnEnable()
+        {
+            if (playOnAwake)
+            {
+                Play();
+            }
         }
 
         public void Play()
