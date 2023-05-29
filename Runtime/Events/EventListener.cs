@@ -1,36 +1,43 @@
-using UnityEngine;
+   using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Serialization;
 
 namespace Wolfey.Events
 {
     public class EventListener : MonoBehaviour
     {
-        [FormerlySerializedAs("eventObj")] [SerializeField] EventObject eventObjectObj;
+        [SerializeField] EventObject eventObj;
         public bool debugPrintEnabled;
-        [SerializeField] UnityEvent eventInvoked;
+        public bool bufferLast;
+        public UnityEvent eventInvoked;
+
+        int _calls;
         
+
         void OnEnable()
         {
-            eventObjectObj.Invoked += eventInvoked.Invoke;
-            eventObjectObj.Invoked += DebugEventObjectObj;
+            eventObj.Invoked += OnCalled;
+            if (bufferLast && _calls != eventObj.Calls)
+            {
+                OnCalled();
+            }
         }
         
         void OnDisable()
         {
-            eventObjectObj.Invoked -= eventInvoked.Invoke;
-            eventObjectObj.Invoked -= DebugEventObjectObj;
+            eventObj.Invoked -= OnCalled;
         }
         
-        void DebugEventObjectObj()
+        void OnCalled()
         {
+            _calls = eventObj.Calls;
+            eventInvoked.Invoke();
             if(!debugPrintEnabled) return;
             Debug.Log(ReadValue<object>().ToString());
         }
 
         public T ReadValue<T>()
         {
-            return eventObjectObj.ReadValue<T>();
+            return eventObj.ReadValue<T>();
         }
     }
 }
