@@ -7,7 +7,7 @@ namespace Wolfey.Events
     public class EventObject : ScriptableObject
     {
         object _value;
-        public int Calls { get; private set; }
+    
 
         public event Action Invoked;
         
@@ -18,7 +18,6 @@ namespace Wolfey.Events
         
         public void Invoke(object value = null)
         {
-            Calls++;
             _value = value;
             Invoked?.Invoke();
         }
