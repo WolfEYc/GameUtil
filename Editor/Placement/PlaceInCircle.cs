@@ -2,7 +2,7 @@
 
 using UnityEngine;
 using UnityEditor;
-using Wolfey.Extensions;
+using Wolfey;
 
 namespace WolfeyGamedev
 {
