@@ -4,7 +4,7 @@ using UnityEngine.VFX;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
-namespace Wolfey.Extensions
+namespace Wolfey
 {
     public static class Extensions
     {
