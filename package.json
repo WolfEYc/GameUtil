@@ -1,16 +1,17 @@
 {
-  "name": "com.wolfey.util",
-  "version": "1.1.5",
-  "displayName": "WolfeyUtil",
-  "description": "Wolfey's singleplayer starter utilities",
+  "name": "com.wolfey.fps",
+  "version": "1.1.6",
+  "displayName": "WolfeyFPS",
+  "description": "Wolfey's FPS Utilities",
   "unity": "2022.2",
-  "unityRelease": "12f1",
+  "unityRelease": "18f1",
   "documentationUrl": "",
   "changelogUrl": "",
   "licensesUrl": "",
   "keywords": [
     "wolfey",
     "util",
+    "fps",
     "starter"
   ],
   "author": {
@@ -19,6 +20,10 @@
     "url": "https://www.github.com/WolfEYC"
   },
   "dependencies": {
-    "com.unity.inputsystem": "1.5.1"
+    "com.unity.inputsystem": "1.5.1",
+    "com.unity.visualeffectgraph": "14.0.7",
+    "com.wolfey.util": "1.0.6",
+    "com.unity.textmeshpro": "3.0.6",
+    "com.unity.cinemachine": "2.9.7"
   }
 }
