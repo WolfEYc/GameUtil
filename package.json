@@ -1,24 +1,24 @@
 {
-    "name": "com.wolfey.util",
-    "version": "1.1.6",
-    "displayName": "WolfeyUtil",
-    "description": "Wolfey's singleplayer starter utilities",
-    "unity": "2022.2",
-    "unityRelease": "12f1",
-    "documentationUrl": "",
-    "changelogUrl": "",
-    "licensesUrl": "",
-    "keywords": [
-      "wolfey",
-      "util",
-      "starter"
-    ],
-    "author": {
-      "name": "Wolfey",
-      "email": "wolfeygamedev@gmail.com",
-      "url": "https://www.github.com/WolfEYC"
-    },
-    "dependencies": {
-      "com.unity.inputsystem": "1.5.1"
-    }
+  "name": "com.wolfey.util",
+  "version": "1.1.6",
+  "displayName": "WolfeyUtil",
+  "description": "Wolfey's singleplayer starter utilities",
+  "unity": "2022.2",
+  "unityRelease": "12f1",
+  "documentationUrl": "",
+  "changelogUrl": "",
+  "licensesUrl": "",
+  "keywords": [
+    "wolfey",
+    "util",
+    "starter"
+  ],
+  "author": {
+    "name": "Wolfey",
+    "email": "wolfeygamedev@gmail.com",
+    "url": "https://www.github.com/WolfEYC"
+  },
+  "dependencies": {
+    "com.unity.inputsystem": "1.5.1"
   }
+}
