@@ -28,9 +28,9 @@ namespace Wolfey.Pooling
         
         void LazyInstantiateParentGameObject()
         {
+            _objectPool.Clear();
             _poolParent = new GameObject($"Pool: {prefab.name}").transform;
             DontDestroyOnLoad(_poolParent);
-            Application.quitting += _objectPool.Clear;
         }
 
         PooledObject CreateClone()
@@ -54,12 +54,6 @@ namespace Wolfey.Pooling
         void OnGet(PooledObject obj)
         {
             obj.GameObject.SetActive(true);
-        }
-
-        void ApplicationOnQuitting()
-        {
-            Application.quitting -= ApplicationOnQuitting;
-            _objectPool?.Clear();
         }
     }
 }
